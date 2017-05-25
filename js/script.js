@@ -5,7 +5,7 @@ $(function(){
     
     var next = 2;
     
-    var interval = 7000;
+    var interval = 20000;
     
     var duration = 1000;
     

@@ -108,6 +108,12 @@ body {
 .ta-right {
   text-align: right; }
 
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -145,11 +151,12 @@ img {
 .l-footer {
   background-color: #292929;
   text-align: right;
-  font-size: 12px;
+  font-size: 10px;
   color: #fff;
   line-height: 30px;
   clear: both;
-  padding: 0 10px; }
+  padding: 0 10px;
+  font-family: "游ゴシック", sans-serif; }
 
 .l-contact-main {
   text-align: center; }
@@ -158,6 +165,8 @@ img {
   padding: 30px 20px; }
   .l-telnumber .number {
     font-size: 18px; }
+    .l-telnumber .number img {
+      width: 20px; }
 
 .contact-form {
   padding-top: 30px;
@@ -214,9 +223,10 @@ img {
     padding-bottom: 100px; }
     .l-telnumber .number {
       font-size: 48px;
-      padding: 20px 0;
-      border-top: 2px solid #fff;
-      border-bottom: 2px solid #fff; } }
+      padding: 20px 0; }
+      .l-telnumber .number img {
+        width: 48px;
+        margin-right: 5px; } }
 
 .concept-box {
   height: 600px;
@@ -237,20 +247,22 @@ img {
     height: 500px; }
 
 .concept-img {
-  height: 600px;
-  background-size: cover; }
+  height: 600px; }
   .concept-img-higher {
     width: 60%;
     float: right;
-    background: url(../img/concept-1.jpg) center center; }
+    background: url(../img/concept-1.jpg) no-repeat center center;
+    background-size: cover; }
   .concept-img-lower1 {
     height: 500px;
     width: 15%;
-    background: url(../img/concept-3.jpg) center center; }
+    background: url(../img/concept-3.jpg) no-repeat center center;
+    background-size: cover; }
   .concept-img-lower2 {
     height: 500px;
     width: 45%;
-    background: url(../img/concept-2.jpg) center center; }
+    background: url(../img/concept-2.jpg) no-repeat center center;
+    background-size: cover; }
 
 .f-left {
   float: left; }
@@ -303,11 +315,17 @@ img {
   background-size: cover; }
 
 .menu-container {
-  margin: 0 auto;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  width: 80%; }
+  .menu-container-bakes {
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0; }
 
 .menu-ul {
-  float: left;
   width: 400px;
   margin-top: 50px;
   margin-right: 20px;
@@ -346,39 +364,27 @@ a.current {
   float: left;
   margin-right: 20px; }
 
-.menu-bg {
-  position: fixed;
-  width: 50%;
-  height: 100%;
-  right: 0;
-  z-index: -1; }
-
-.l-mainvisual {
-  width: 100%;
-  height: 115px; }
-
 .mv-logo {
   display: none; }
 
-.l-infomation {
-  clear: both; }
-
 @media screen and (min-width: 600px) {
-  .l-mainvisual ul {
-    position: relative;
-    width: 100%;
-    height: 550px;
-    overflow: hidden; }
-  .l-mainvisual li {
-    position: absolute;
-    width: 100%; }
+  .l-mainvisual {
+    max-width: 1600px;
+    margin: 0 auto; }
+    .l-mainvisual ul {
+      position: relative;
+      width: 100%; }
+    .l-mainvisual li {
+      position: absolute;
+      width: 100%; }
   .mv-logo {
     width: 490px;
     position: absolute;
     top: 50%;
     left: 50%;
     margin-left: -256px;
-    z-index: 1; } }
+    z-index: 1;
+    display: block; } }
 
 @media screen and (min-width: 960px) {
   .sns-list {
@@ -392,26 +398,47 @@ a.current {
     list-style-type: none; }
   .sns-link {
     display: inline-block;
-    width: 33%;
+    width: 100%;
     height: 150px;
     color: #fff;
     text-decoration: none;
     padding: 10px;
     box-sizing: border-box; }
+  .facebook {
+    transition: .2s background linear;
+    background: url(../img/bnr-facebook-mono.png) center center no-repeat;
+    background-size: cover; }
+    .facebook:hover {
+      background: url(../img/bnr-facebook.png) center center no-repeat;
+      background-size: cover; }
+  .instagram {
+    transition: .2s background linear;
+    background: url(../img/bnr-insta-mono.png) center center no-repeat;
+    background-size: cover; }
+    .instagram:hover {
+      background: url(../img/bnr-insta.png) center center no-repeat;
+      background-size: cover; }
   .news {
     float: left;
-    width: 67%; }
+    width: 67%;
+    height: 300px;
+    overflow: auto; }
   .news-date {
+    vertical-align: top;
+    color: #fff;
     width: 50%;
-    height: 300px;
+    padding-top: 20px;
+    box-sizing: border-box;
     background-color: #ecbb60;
-    float: left; }
-  .news-body {
-    width: 50%;
-    max-width: 400px;
-    height: 300px;
+    font-size: 24px; }
+  .news-discription {
+    padding: 20px;
+    box-sizing: border-box;
     background-color: #fff;
-    float: right; }
+    float: right;
+    line-height: 1.2em;
+    font-size: 14px;
+    border-bottom: 1px dotted #292929; }
   .info-container {
     background-color: #ecbb60; } }
 
@@ -421,11 +448,13 @@ a.current {
 .btn {
   color: #fff;
   font-size: 16px;
-  padding: 10px 20px 10px 30px;
-  background-color: transparent;
-  border: #fff 3px solid;
-  background: url(../img/check.png) no-repeat left center;
-  background-size: 20%; }
+  padding: 10px 20px;
+  border: #fff 2px solid;
+  background-size: 20%;
+  text-decoration: none; }
+  .btn img {
+    width: 20px;
+    margin-right: 5px; }
 
 @media screen and (min-width: 600px) {
   .nav_btn {
@@ -446,10 +475,6 @@ a.current {
 .shadow {
   text-shadow: 0 5px 10px #000; }
 
-.l-mainvisual {
-  background: url(../img/mv-cake.jpg) center 25%;
-  background-size: cover; }
-
 .heading-blue {
   font-weight: bold;
   font-size: 18px;
@@ -461,7 +486,6 @@ a.current {
   border-bottom: 2px solid #558997; }
 
 .info-heading {
-  display: inline-block;
   line-height: 1.2em;
   text-align: center;
   padding: 20px 0;
@@ -481,6 +505,17 @@ a.current {
   background-size: cover; }
 
 @media screen and (min-width: 960px) {
+  .newinfomation {
+    text-align: center; }
+    .newinfomation-heading {
+      display: inline-block;
+      font-size: 48px;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      color: #fff;
+      font-family: "02うつくし明朝体", serif;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #fff; }
   .heading {
     height: 550px;
     font-size: 48px;
@@ -491,9 +526,10 @@ a.current {
     padding-bottom: 20px;
     margin-bottom: 40px; }
   .info-heading {
-    padding: 100px 0;
+    display: inline-block;
+    text-align: center;
     font-size: 48px;
-    text-align: center; }
+    border-bottom: 1px solid #fff; }
   .heading-large {
     font-size: 48px; } }
 
