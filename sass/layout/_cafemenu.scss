@@ -11,12 +11,16 @@
 
 //ここまで
 .menu-container {
-//    margin: 0 auto;
     background-color: #fff;
+    transform-origin: 100% 0;
+    width: 80%;
+    &-bakes{
+        transform-origin: 0 0;
+        
+    }
 }
 
 .menu-ul {
-    float: left;
     width: 400px;
     margin-top: 50px;
     margin-right: 20px;
