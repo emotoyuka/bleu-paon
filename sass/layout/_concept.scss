@@ -25,21 +25,23 @@
 
 .concept-img {
     height: 600px;
-    background-size: cover;
     &-higher {
         width: 60%;
         float: right;
-        background: url(../img/concept-1.jpg) center center;
+        background: url(../img/concept-1.jpg) no-repeat center center;
+        background-size: cover;
     }
     &-lower1 {
         height: 500px;
         width: 15%;
-        background: url(../img/concept-3.jpg)center center;
+        background: url(../img/concept-3.jpg) no-repeat center center;
+        background-size: cover;
     }
     &-lower2 {
         height: 500px;
         width: 45%;
-        background: url(../img/concept-2.jpg)center center;
+        background: url(../img/concept-2.jpg) no-repeat center center;
+        background-size: cover;
     }
 }
 
