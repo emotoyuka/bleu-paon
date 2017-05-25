@@ -1,0 +1,27 @@
+.l-header{
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    &-logo{
+        width: 70px;
+        line-height: 40px;
+        float: left;
+        background: url(../img/headerlogo.png) center center;
+        background-size: cover;
+        text-indent: -9999px;
+    }
+}
+
+@media screen and (min-width:$tab){
+    .l-header{
+        height: 150px;
+        &-logo{
+            width: 170px;
+        height: 100px;
+            margin-top: 25px;
+        }
+    }
+    
+}

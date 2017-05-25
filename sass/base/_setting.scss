@@ -1,0 +1,20 @@
+//fontの設定
+$default-font: '02うつくし明朝体',
+serif;
+@import url('https://fonts.googleapis.com/css?family=Diplomata');
+$diplo-font: 'Diplomata',
+cursive;
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
+$old-font: 'Old Standard TT',
+serif;
+$txt-font: '游ゴシック',
+sans-serif;
+//colorの設定
+$bg-blue: #abd5e7;
+$bg-yellow: #ecbb60;
+$black: #292929;
+$blue: #558997;
+//sizeの設定
+$sp: 320px;
+$tab: 600px;
+$pc: 960px;

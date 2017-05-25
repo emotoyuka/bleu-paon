@@ -1,0 +1,208 @@
+.concept-box {
+    height: 600px;
+    background-color: $bg-blue;
+    &-lower {
+    clear: both;
+        height: 500px;
+}
+}
+
+
+
+.concept-txt {
+    font-size: 16px;
+    width: 350px;
+    height: 600px;
+    background-color: #fff;
+    line-height: 1.4;
+    p {
+        font-family: $txt-font;
+    }
+    &-lower{
+        height: 500px;
+    }
+}
+
+.concept-img {
+    height: 600px;
+    background-size: cover;
+    &-higher {
+        width: 60%;
+        float: right;
+        background: url(../img/concept-1.jpg) center center;
+    }
+    &-lower1 {
+        height: 500px;
+        width: 15%;
+        background: url(../img/concept-3.jpg)center center;
+    }
+    &-lower2 {
+        height: 500px;
+        width: 45%;
+        background: url(../img/concept-2.jpg)center center;
+    }
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+//
+//.fl-right{
+////        float: right;
+//    }
+//
+//.concept-higher-img{
+//    width: 100%;
+//    height: 185px;
+//    background: url(../img/concept-1.jpg) center center;
+//    background-size: cover;
+//}
+//
+//.concept-lower-img1{
+////    float: left;
+//    width: 30%;
+//    height: 185px;
+//    background: url(../img/concept-3.jpg) center center;
+//    background-size: cover;
+//}
+//
+//.concept-lower-img2{
+////    float: right;
+//    width: 70%;
+//    height: 185px;
+//    background: url(../img/concept-2.jpg) center center;
+//    background-size: cover;
+//}
+//
+////shopinfo
+//
+//.info-txt{
+//    font-style: normal;
+//}
+//
+//.shop-img{
+//    width: 100%;
+//    height: 237px;
+//    background: url(../img/shopinfo.jpg) center center;
+//    background-size: cover;
+//}
+//
+//@media screen and(min-width:$tab){
+//    .concept-txt{
+//    padding: 20px 10px;
+////    clear: both;
+//    background-color: #fff;
+//    line-height: 1.5rem;
+//    max-width: 445px;
+//        box-sizing: border-box;
+//    h3{
+//        font-size: 18px;
+//    }
+//    p{
+//        font-size: 16px;
+//    }
+//}
+//    
+//    .container{
+//        width: 1200px;
+//        margin: 0 auto;
+//    }
+//    
+//    .concept-higher{
+//        ul{
+//            float: right;
+//            width: 1200px;
+//            height: 620px;
+//        }
+//        li{
+//            float:  left;
+//            list-style-type: none;
+//            &:nth-of-type(2){
+//                width: 755px;
+//            }
+//        }
+//        &-img{
+//            height: 620px;
+//        }
+//    }
+//    
+//    .concept-lower{
+//        clear: both;
+//        ul{
+//            height: 620px;
+//        }
+//        li{
+//            list-style-type: none;
+//            &:nth-of-type(1){
+//                float: left;
+//                width: 394px;
+//            }
+//            &:nth-of-type(2){
+//                float: left;
+//                width: 680px;
+//            }
+//            &:nth-of-type(3){
+//                float: left;
+//            }
+//        }
+//        &-img1,.concept-lower-img2{
+//            width: 100%;
+//            height: 620px;
+//        }
+//    }
+//    
+//    .concept-txt{
+//        width: 445px;
+//        height: 620px;
+//    }
+//    
+//}
+@media screen and(min-width:$pc) {
+    .concept-txt {
+        padding: 40px 30px 0;
+        box-sizing: border-box;
+        h2{
+            font-family: $default-font;
+            font-size: 28px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid $black;
+        }
+    }
+    
+    .businesshours {
+	display: inline-block;
+        width: 10em;
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: $blue;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $black;
+}
+    
+    .shopinfo-box{
+        clear: both;
+    }
+    
+    .info-txt {
+        transform-origin: 100% 0;
+        width: 40%;
+        height: 450px;
+        float: left;
+        font-style: normal;
+        font-family: $txt-font;
+    }
+    .shop-img {
+        width: 50%;
+        height: 450px;
+        background: url(../img/shopinfo.jpg) no-repeat center center;
+        background-size: cover;
+    }
+    .mapwidth {
+        max-width: 100%;
+    }
+}

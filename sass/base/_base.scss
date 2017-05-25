@@ -1,0 +1,38 @@
+*{
+    font-family: $default-font;
+}
+
+body{
+    background-color: $bg-blue;
+}
+
+.inner{
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg-blue{
+    background-color: $bg-blue;
+}
+
+.bg-yellow{
+    background-color: #ecbb60;
+    color: #fff;
+}
+
+.ta-right{
+    text-align: right;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}

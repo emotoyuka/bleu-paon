@@ -1,0 +1,19 @@
+.nav_btn {
+    float: right;
+}
+
+.btn{
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px 10px 30px;
+    background-color: transparent;
+    border: #fff 3px solid;
+    background: url(../img/check.png) no-repeat left center;
+    background-size: 20%;
+}
+
+@media screen and(min-width:$tab){
+    .nav_btn{
+        display: none;
+    }
+}

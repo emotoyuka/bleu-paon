@@ -1,0 +1,80 @@
+.l-cafemenu-heading {
+    background: url(../img/cafemenu-mv.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+//bakes heading
+.l-bakes-heading {
+    background: url(../img/bakes-mv.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+//ここまで
+.menu-container {
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.menu-ul {
+    float: left;
+    width: 400px;
+    margin-top: 50px;
+    margin-right: 20px;
+    color: $black;
+    li {
+        list-style-type: none;
+        line-height: 1.5;
+    }
+}
+
+.contents img {
+    width: 700px;
+}
+
+.menu-heading {
+    display: inline-block;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: $black;
+    border-bottom: 1px solid $black;
+    &-ja {
+        font-size: 14px;
+        color: $black;
+    }
+}
+
+.menu-link {
+    color: $black;
+    text-decoration: none;
+//    &:hover {
+//        transition: .2s color linear;
+//        color: #999;
+//    }
+}
+
+a.current {
+    color: $bg-yellow;
+}
+
+.price {
+    font-size: 14px;
+}
+
+.menu-last {
+    margin-bottom: 40px;
+}
+
+.l-bakes-main {
+    .contents {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+.menu-bg {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    z-index: -1;
+}

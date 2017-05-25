@@ -1,0 +1,549 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Diplomata");
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT");
+/*
+html5doctor.com Reset Stylesheet
+v1.4
+2009-07-27
+Author: Richard Clark - http://richclarkdesign.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+* {
+  font-family: "02うつくし明朝体", serif; }
+
+body {
+  background-color: #abd5e7; }
+
+.inner {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+.bg-blue {
+  background-color: #abd5e7; }
+
+.bg-yellow {
+  background-color: #ecbb60;
+  color: #fff; }
+
+.ta-right {
+  text-align: right; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.cf::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.l-header {
+  width: 100%;
+  height: 50px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background-color: #fff; }
+  .l-header-logo {
+    width: 70px;
+    line-height: 40px;
+    float: left;
+    background: url(../img/headerlogo.png) center center;
+    background-size: cover;
+    text-indent: -9999px; }
+
+@media screen and (min-width: 600px) {
+  .l-header {
+    height: 150px; }
+    .l-header-logo {
+      width: 170px;
+      height: 100px;
+      margin-top: 25px; } }
+
+.l-infomation {
+  width: 100%; }
+
+.l-footer {
+  background-color: #292929;
+  text-align: right;
+  font-size: 12px;
+  color: #fff;
+  line-height: 30px;
+  clear: both;
+  padding: 0 10px; }
+
+.l-contact-main {
+  text-align: center; }
+
+.l-telnumber {
+  padding: 30px 20px; }
+  .l-telnumber .number {
+    font-size: 18px; }
+
+.contact-form {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.name,
+.furigana,
+.email,
+.message {
+  width: 200px;
+  border: none;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-family: "游ゴシック", sans-serif; }
+
+@media screen and (min-width: 600px) {
+  .name,
+  .furigana,
+  .email,
+  .message {
+    width: 300px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-family: "游ゴシック", sans-serif; }
+  .contact-form {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .btn {
+    margin-top: 25px; } }
+
+.l-telnumber {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  .l-telnumber .number {
+    font-size: 36px; }
+
+@media screen and (min-width: 960px) {
+  .form-left {
+    float: left; }
+  .contact-form {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+  .form-inner {
+    width: 680px;
+    margin: 0 auto;
+    overflow: hidden; }
+  .btn {
+    margin-top: 25px;
+    float: right;
+    margin-right: 30px; }
+  .l-telnumber {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .l-telnumber .number {
+      font-size: 48px;
+      padding: 20px 0;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff; } }
+
+.concept-box {
+  height: 600px;
+  background-color: #abd5e7; }
+  .concept-box-lower {
+    clear: both;
+    height: 500px; }
+
+.concept-txt {
+  font-size: 16px;
+  width: 350px;
+  height: 600px;
+  background-color: #fff;
+  line-height: 1.4; }
+  .concept-txt p {
+    font-family: "游ゴシック", sans-serif; }
+  .concept-txt-lower {
+    height: 500px; }
+
+.concept-img {
+  height: 600px;
+  background-size: cover; }
+  .concept-img-higher {
+    width: 60%;
+    float: right;
+    background: url(../img/concept-1.jpg) center center; }
+  .concept-img-lower1 {
+    height: 500px;
+    width: 15%;
+    background: url(../img/concept-3.jpg) center center; }
+  .concept-img-lower2 {
+    height: 500px;
+    width: 45%;
+    background: url(../img/concept-2.jpg) center center; }
+
+.f-left {
+  float: left; }
+
+.f-right {
+  float: right; }
+
+@media screen and (min-width: 960px) {
+  .concept-txt {
+    padding: 40px 30px 0;
+    box-sizing: border-box; }
+    .concept-txt h2 {
+      font-family: "02うつくし明朝体", serif;
+      font-size: 28px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #292929; }
+  .businesshours {
+    display: inline-block;
+    width: 10em;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #558997;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #292929; }
+  .shopinfo-box {
+    clear: both; }
+  .info-txt {
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    width: 40%;
+    height: 450px;
+    float: left;
+    font-style: normal;
+    font-family: "游ゴシック", sans-serif; }
+  .shop-img {
+    width: 50%;
+    height: 450px;
+    background: url(../img/shopinfo.jpg) no-repeat center center;
+    background-size: cover; }
+  .mapwidth {
+    max-width: 100%; } }
+
+.l-cafemenu-heading {
+  background: url(../img/cafemenu-mv.jpg) no-repeat center top;
+  background-size: cover; }
+
+.l-bakes-heading {
+  background: url(../img/bakes-mv.jpg) no-repeat center center;
+  background-size: cover; }
+
+.menu-container {
+  margin: 0 auto;
+  background-color: #fff; }
+
+.menu-ul {
+  float: left;
+  width: 400px;
+  margin-top: 50px;
+  margin-right: 20px;
+  color: #292929; }
+  .menu-ul li {
+    list-style-type: none;
+    line-height: 1.5; }
+
+.contents img {
+  width: 700px; }
+
+.menu-heading {
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #292929;
+  border-bottom: 1px solid #292929; }
+  .menu-heading-ja {
+    font-size: 14px;
+    color: #292929; }
+
+.menu-link {
+  color: #292929;
+  text-decoration: none; }
+
+a.current {
+  color: #ecbb60; }
+
+.price {
+  font-size: 14px; }
+
+.menu-last {
+  margin-bottom: 40px; }
+
+.l-bakes-main .contents {
+  float: left;
+  margin-right: 20px; }
+
+.menu-bg {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  z-index: -1; }
+
+.l-mainvisual {
+  width: 100%;
+  height: 115px; }
+
+.mv-logo {
+  display: none; }
+
+.l-infomation {
+  clear: both; }
+
+@media screen and (min-width: 600px) {
+  .l-mainvisual ul {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden; }
+  .l-mainvisual li {
+    position: absolute;
+    width: 100%; }
+  .mv-logo {
+    width: 490px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -256px;
+    z-index: 1; } }
+
+@media screen and (min-width: 960px) {
+  .sns-list {
+    width: 33%;
+    height: 300px;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    background-color: #f44;
+    float: left;
+    list-style-type: none; }
+  .sns-link {
+    display: inline-block;
+    width: 33%;
+    height: 150px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    box-sizing: border-box; }
+  .news {
+    float: left;
+    width: 67%; }
+  .news-date {
+    width: 50%;
+    height: 300px;
+    background-color: #ecbb60;
+    float: left; }
+  .news-body {
+    width: 50%;
+    max-width: 400px;
+    height: 300px;
+    background-color: #fff;
+    float: right; }
+  .info-container {
+    background-color: #ecbb60; } }
+
+.nav_btn {
+  float: right; }
+
+.btn {
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px 10px 30px;
+  background-color: transparent;
+  border: #fff 3px solid;
+  background: url(../img/check.png) no-repeat left center;
+  background-size: 20%; }
+
+@media screen and (min-width: 600px) {
+  .nav_btn {
+    display: none; } }
+
+.heading {
+  width: 100%;
+  height: 115px;
+  text-align: center;
+  line-height: 115px;
+  color: #fff;
+  font-family: "02うつくし明朝体", serif;
+  font-size: 24px; }
+
+.blue {
+  color: #558997; }
+
+.shadow {
+  text-shadow: 0 5px 10px #000; }
+
+.l-mainvisual {
+  background: url(../img/mv-cake.jpg) center 25%;
+  background-size: cover; }
+
+.heading-blue {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5rem;
+  color: #558997;
+  font-family: "游ゴシック", sans-serif;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-bottom: 2px solid #558997; }
+
+.info-heading {
+  display: inline-block;
+  line-height: 1.2em;
+  text-align: center;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #abd5e7;
+  font-family: "02うつくし明朝体", serif;
+  letter-spacing: 1px; }
+
+.l-contact-heading {
+  background: url(../img/contact-mv.jpg) center center;
+  background-size: cover; }
+
+.l-concept-heading {
+  background: url(../img/concept-mv.jpg) center center;
+  background-size: cover; }
+
+@media screen and (min-width: 960px) {
+  .heading {
+    height: 550px;
+    font-size: 48px;
+    line-height: 550px; }
+  .heading-blue {
+    padding-bottom: 20px;
+    font-size: 24px;
+    padding-bottom: 20px;
+    margin-bottom: 40px; }
+  .info-heading {
+    padding: 100px 0;
+    font-size: 48px;
+    text-align: center; }
+  .heading-large {
+    font-size: 48px; } }
+
+.gnav {
+  position: relative;
+  text-align: center; }
+
+.nav-list {
+  position: absolute;
+  top: 45%;
+  left: 50%; }
+
+.visit {
+  color: #abd5e7;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #abd5e7; }
+
+@media screen and (min-width: 600px) {
+  .gnav {
+    position: absolute;
+    top: 50%;
+    right: 0; }
+    .gnav-item {
+      float: left;
+      margin-left: 30px; }
+    .gnav-link {
+      text-decoration: none;
+      color: #292929;
+      position: relative;
+      display: inline-block; }
+      .gnav-link:hover {
+        color: #999; } }
+
+.gnav-link:before,
+.gnav-link:after {
+  position: absolute;
+  top: 1.3em;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  background: #292929;
+  transition: .3s; }
+
+.gnav-link:before {
+  left: 50%; }
+
+.gnav-link:after {
+  right: 50%; }
+
+.gnav-link:hover:before,
+.gnav-link:hover:after {
+  width: 50%; }
